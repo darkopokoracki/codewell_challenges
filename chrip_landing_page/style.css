@@ -29,6 +29,10 @@ html {
     margin: 0 auto;
 }
 
+.d_none {   /* For Hero Images */
+    display: none;
+}
+
 .row {
     display: flex;
     align-items: center;
@@ -104,10 +108,6 @@ img {
 
 .main-section .row {
     flex-direction: column-reverse;
-}
-
-.hero-img-tablet {
-    display: none;
 }
 
 .main-section__title {
@@ -214,14 +214,6 @@ img {
     }
 
     /* 2. Main Section */
-    .hero-img-mobile {
-        display: none;
-    }
-
-    .hero-img-tablet {
-        display: inline-block;
-    }
-
     .main-section .twitter-btn,
     .main-section .learn-more {
         display: inline-block;
@@ -236,15 +228,6 @@ img {
 
 @media (min-width: 900px) {
     /* 2. Main Section */
-
-    .hero-img-desktop {
-        display: inline-block;
-    }
-
-    .hero-img-tablet {
-        display: none;
-    }
-
     .main-section .row {
         flex-direction: row;
     }
