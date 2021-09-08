@@ -1,0 +1,111 @@
+/* Mobile first */
+/* ==================Navigation============================
+        0. Global
+        1. Header
+        2. Main Section
+        3. Article Section
+        4. User Avatar Section
+        5. Price Section
+        6. Footer
+        7. Media Queries
+    ========================================================*/
+
+/*==============
+    0. Global
+===============*/
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    max-width: 100%;
+    width: 15px;
+}
+
+.twitter-btn {
+    padding: .9rem;
+    background: #1DA1F2;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+/*==============
+    1. Header
+    ===========*/
+
+.header {
+    background-color: #FBF8F3;
+    padding: 2rem 0;
+}
+
+.tablet-desktop-view {
+    display: none;
+}
+
+.tablet-desktop-view a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #535353;
+}
+
+.tablet-desktop-view a + * {
+    margin-left: 1.5rem;
+}
+
+.header-row {
+    justify-content: space-between;
+}
+
+.logo {
+    text-decoration: none;
+    color: #287BF5;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.hamburger-menu img {
+    width: 25px;
+}
+
+
+
+
+
+
+
+
+
+/* =================
+    7. Media Queries
+    ===============*/
+
+@media (min-width: 700px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .tablet-desktop-view {
+        display: flex;
+        align-items: center;
+    }
+}

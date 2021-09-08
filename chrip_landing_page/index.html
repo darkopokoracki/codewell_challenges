@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -24,11 +27,11 @@
     <!-- 1. Header START -->
     <header class="header">
         <div class="container">
-            <div class="row">
+            <div class="row header-row">
                 <div class="col">
                     <a href="#" class="logo">Chrip.</a>
                 </div>
-                <div class="col">
+                <div class="col tablet-desktop-view">
                     <a href="#">Home</a>
                     <a href="#">Pricing</a>
                     <a href="#">FAQ</a>
@@ -36,6 +39,9 @@
                         <img src="Assets/Twitter.svg" alt="Twitter Icon - white">
                         Sign in with Twitter
                     </button>
+                </div>
+                <div class="col hamburger-menu">
+                    <img src="Assets/Hamburger Menu.svg" alt="Hamburger Menu">
                 </div>
             </div>
         </div>
@@ -85,8 +91,8 @@
 
                 <div class="col">
                     <img src="Assets/Hero Image (Desktop View).png" 
-                         alt="Hero Image Desktop View"
-                         class="hero-img-desktop">
+                         alt="Hero Image Desktop and Mobile View"
+                         class="hero-img-desktop hero-img-mobile">
 
                     <img src="Assets/Hero Image (Tablet View).png" 
                          alt="Hero Image Tablet View"
