@@ -53,10 +53,11 @@ img {
     cursor: pointer;
 }
 
-.main-section__text {
+.main-section__text,
+.article-section__text {
     font-size: 1.2rem;
     color: #6E6F6F;
-    word-spacing: 5px;
+    word-spacing: 3px;
 }
 
 /*==============
@@ -188,9 +189,33 @@ img {
     grid-row: 1;
 }
 
+/*====================
+    3. Article Section
+    ===============*/
+.article-section {
+    padding: 3rem 0;
+}
 
+.article-section i {
+    color: #1DA1F2;
+}
 
+.article-section__title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
 
+.article-section .article {
+    border: 2px solid #D3D3D3;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.article__title {
+    margin: 1.2rem 0;
+    font-size: 1.3rem;
+}
 
 
 /* =================
@@ -224,6 +249,9 @@ img {
         text-align: left;
         margin-left: 2rem;
     }
+
+    /* 3. Article Section */
+    /* x */
 }
 
 @media (min-width: 900px) {
@@ -239,4 +267,20 @@ img {
     .main-section__title {
         font-size: 3rem;
     }
+
+    /* 3. Article Section */
+    .article-section .col {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .article-section .col .article {
+        width: 48%;
+    }
+
 }
+
+/*
+    Nisam Resio Section Article... Pokusao sam preko Grida, moracu to da proucim malo bolje.
+*/
