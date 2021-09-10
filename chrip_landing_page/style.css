@@ -54,7 +54,9 @@ img {
 }
 
 .main-section__text,
-.article-section__text {
+.article-section__text,
+.card__heart-numbers,
+.card__date {
     font-size: 1.2rem;
     color: #6E6F6F;
     word-spacing: 3px;
@@ -191,7 +193,7 @@ img {
 
 /*====================
     3. Article Section
-    ===============*/
+    ==================*/
 .article-section {
     padding: 3rem 0;
 }
@@ -217,6 +219,98 @@ img {
     font-size: 1.3rem;
 }
 
+/*========================
+    3. User Avatar Section
+    ======================*/
+.user-avatar-section {
+    background: #D7F5F5;
+    padding: 3rem 0;
+}
+
+.user-avatar-section__title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.user-avatar-section .row {
+    display: block;
+    /* width: 100%; */
+}
+
+.card {
+    border-radius: 10px;
+    background: #ffffff;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas: "image info . twitter"
+                         "text text text text"
+                         "heart . date date";
+}
+
+.card__user {
+    grid-area: image;
+    align-self: center;
+
+    width: 60px;
+}
+
+.card__perosnal-info {
+    grid-area: info;
+    align-self: center;
+    justify-self: start;
+}
+
+.card__twitter {
+    grid-area: twitter;
+    align-self: center;
+    justify-self: end;
+}
+
+.card__description {
+    grid-area: text;
+    font-size: 1rem;
+    color: #6E6F6F;
+    padding: 2rem 0 .5rem 0;
+}
+
+.card__heart {
+    grid-area: heart;
+    align-self: end;
+
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+}
+
+.card__heart img {
+    width: 20px;
+}
+
+.card__date {
+    grid-area: date;
+    align-self: end;
+    justify-self: end;
+    font-size: .9rem;
+}
+
+.card__heart img {
+    margin-right: .5rem;
+}
+
+.card__name {
+    font-weight: 900;
+    font-size: .9rem;
+    margin-bottom: .3rem;
+}
+
+.card__email {
+    font-size: .756rem;
+    color: #6E6F6F;
+}
 
 /* =================
     7. Media Queries
@@ -252,6 +346,25 @@ img {
 
     /* 3. Article Section */
     /* x */
+
+    /* 4. User Avatar Section */
+	.user-avatar-section .row {
+		display: block;
+		overflow: auto;
+		white-space: nowrap;
+		margin: 0 -40px;
+		padding: 0 40px;
+	}
+	.card {
+        display: inline-grid;
+		width: 55vw;
+		white-space: normal;
+		vertical-align:top;
+		margin-right: 20px;
+	}
+	.card:last-child {
+		margin-right: 40px;
+	}
 }
 
 @media (min-width: 900px) {
@@ -279,6 +392,21 @@ img {
         width: 48%;
     }
 
+    /* 4. User Avatar Section*/
+    .user-avatar-section .row {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .card {
+        grid-template-areas: "image info info twitter"
+                            "text text text text"
+                            "heart date date date";
+    }
+
+    .card__perosnal-info {
+        padding-left: .5rem;
+    }
 }
 
 /*
