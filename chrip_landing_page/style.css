@@ -29,6 +29,64 @@ html {
     margin: 0 auto;
 }
 
+.mobile-menu {
+    position: absolute;
+    background: #1DA1F2;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.mobile__pricing {
+    margin: 1.5rem 0;
+}
+
+.mobile .mobile-twitter-btn {
+    color: #1DA1F2;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    width: 90%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile .mobile-twitter-btn img {
+    width: 35px;
+    margin-right: .5rem;
+}
+
+.mobile .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    border: none;
+    color: white;
+    background: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: .7rem;
+    border-radius: 10px;
+}
+
 .d_none {   /* For Hero Images */
     display: none;
 }
@@ -104,8 +162,10 @@ img {
     font-size: 1.3rem;
 }
 
+
 .hamburger-menu img {
     width: 25px;
+    cursor: pointer;
 }
 
 /*=================
@@ -432,6 +492,10 @@ img {
     .tablet-desktop-view {
         display: flex;
         align-items: center;
+    }
+
+    .mobile-menu {
+        display: none;
     }
 
     /* 2. Main Section */
