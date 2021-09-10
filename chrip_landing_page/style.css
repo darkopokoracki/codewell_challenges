@@ -32,6 +32,7 @@ html {
 .mobile-menu {
     position: absolute;
     background: #1DA1F2;
+    opacity: 0.9;
     left: 0;
     top: 0;
     width: 100vw;
@@ -75,8 +76,8 @@ html {
 
 .mobile .close {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
 
     border: none;
     color: white;
@@ -114,6 +115,12 @@ img {
     justify-content: center;
 }
 
+.twitter-btn:hover,
+.twitter-btn:focus {
+    opacity: 0.9;
+    transition: 0.2s;
+}
+
 .twitter-btn img {
     margin-right: .4rem;
 }
@@ -147,6 +154,11 @@ img {
     color: #535353;
 }
 
+.tablet-desktop-view a:hover {
+    color: black;
+    transition: 0.4s;
+}
+
 .tablet-desktop-view a + * {
     margin-left: 1.5rem;
 }
@@ -161,7 +173,6 @@ img {
     font-weight: bold;
     font-size: 1.3rem;
 }
-
 
 .hamburger-menu img {
     width: 25px;
@@ -204,6 +215,11 @@ img {
     font-weight: bold;
     font-size: 1.2rem;
     margin: 1rem 0 2rem 0;
+}
+
+.learn-more:hover,
+.learn-more:focus {
+    text-decoration: underline;
 }
 
 .user-avatar-container {
@@ -505,6 +521,10 @@ img {
         width: 45%;
     }
 
+    .main-section .twitter-btn {
+        margin-bottom: 2rem;
+    }
+
     .learn-more {
         text-align: left;
         margin-left: 2rem;
@@ -561,7 +581,14 @@ img {
     }
 
     .main-section__title {
-        font-size: 3rem;
+        font-size: 2.7rem;
+        margin-bottom: 2rem;
+    }
+
+    .cta-div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     /* 3. Article Section */
