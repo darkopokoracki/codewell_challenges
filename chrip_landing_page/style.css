@@ -388,9 +388,31 @@ img {
     margin-left: .7rem;
 }
 
+/* ============
+    6. Footer
+    ==========*/
+.footer {
+    background: #D7F5F5;
+    padding: 1.5rem 0 .75rem 0;
+}
 
+.footer .row {
+    display: block;
+}
 
+.footer .col-logo {
+    margin-bottom: 1rem;
+}
 
+.footer .col-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.privacy {
+    margin: 0 1rem;
+}
 
 /* =================
     7. Media Queries
@@ -452,6 +474,16 @@ img {
         margin: 0 auto;
     }
 
+    /* 6. Footer */
+    .footer .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .col-links {
+        padding-bottom: .5rem;
+    }
 }
 
 @media (min-width: 900px) {
