@@ -51,12 +51,20 @@ img {
     font-weight: 600;
     font-size: 1.2rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.twitter-btn img {
+    margin-right: .4rem;
 }
 
 .main-section__text,
 .article-section__text,
 .card__heart-numbers,
-.card__date {
+.card__date,
+.price-section__text {
     font-size: 1.2rem;
     color: #6E6F6F;
     word-spacing: 3px;
@@ -220,7 +228,7 @@ img {
 }
 
 /*========================
-    3. User Avatar Section
+    4. User Avatar Section
     ======================*/
 .user-avatar-section {
     background: #D7F5F5;
@@ -275,6 +283,7 @@ img {
     font-size: 1rem;
     color: #6E6F6F;
     padding: 2rem 0 .5rem 0;
+    line-height: 1.6;
 }
 
 .card__heart {
@@ -311,6 +320,77 @@ img {
     font-size: .756rem;
     color: #6E6F6F;
 }
+
+/*====================
+    5. Price Section
+    =================*/
+.price-section {
+    padding: 4rem 0;
+}
+
+.price-section .row {
+    display: block;
+}
+
+.price-section__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.price-section__text {
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+.price-article {
+    border: 2px solid #FFB02B;
+    border-radius: 10px;
+    background: #FBF8F3;
+    padding: 1.5rem;
+}
+
+.price-article .twitter-btn {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.price-article span {
+    font-size: 1.4rem;
+    color: #6E6F6F;
+    font-weight: 400;
+}
+
+.price-article h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.price-article h3 span {
+    margin-left: -12px;
+}
+
+.checkmark-div {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.space {
+    margin-top: 1rem;
+}
+
+.checkmark-div p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #6E6F6F;
+    margin-left: .7rem;
+}
+
+
+
+
 
 /* =================
     7. Media Queries
@@ -365,6 +445,13 @@ img {
 	.card:last-child {
 		margin-right: 40px;
 	}
+
+    /* 5. Price Section */
+    .price-section .row {
+        width: 70%;
+        margin: 0 auto;
+    }
+
 }
 
 @media (min-width: 900px) {
@@ -407,8 +494,10 @@ img {
     .card__perosnal-info {
         padding-left: .5rem;
     }
-}
 
-/*
-    Nisam Resio Section Article... Pokusao sam preko Grida, moracu to da proucim malo bolje.
-*/
+    /* 5. Price Section */
+    .price-section .row {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
