@@ -1,0 +1,91 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.d_none {
+    display: none;
+}
+
+.main-section__text,
+.article__text,
+.copyright {
+    color: #6B6B6A;
+    font-size: 1.125rem; /*18px*/
+    line-height: 1.6;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+
+    margin: 1.1rem 0 3rem 0;
+}
+
+.user__img {
+    width: 55px;
+    margin-right: 1rem;
+}
+
+.info__name {
+    font-size: .9rem;
+}
+
+.info__job {
+    font-size: .85rem;
+    color: #6B6B6A;
+    font-weight: 500;
+}
+
+/* ================
+    Header
+===================*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 2.5rem 0;
+}
+
+/*================
+    Main Section
+=================*/
+.hero {
+    margin-bottom: 2rem;
+}
+
+.main-section__title {
+    font-size: 2.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/*==================
+    Article Section
+==================*/
+.article__title {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+/*===============
+    Footer
+================*/
+.footer {
+    padding: 1rem 0;
+}
