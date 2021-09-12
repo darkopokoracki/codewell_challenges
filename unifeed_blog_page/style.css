@@ -52,6 +52,7 @@ img {
     font-weight: 500;
 }
 
+
 /* ================
     Header
 ===================*/
@@ -88,4 +89,45 @@ img {
 ================*/
 .footer {
     padding: 1rem 0;
+}
+
+@media (min-width: 600px) {
+    .d_none {
+        display: block;
+    }
+
+    .hamburger-menu__img {
+        display: none;
+    }
+
+    .nav__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .list__item + .list__item {
+        margin-left: 1rem;
+    }
+
+    .item__link {
+        text-decoration: none;
+        color: #636363;
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+    
+    .subscribe-btn {
+        background: #EE7C0E;
+        padding: 1rem;
+        color: black;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
