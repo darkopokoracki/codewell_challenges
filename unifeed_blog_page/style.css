@@ -131,3 +131,43 @@ img {
         align-items: center;
     }
 }
+
+@media (min-width: 900px) {
+    .main-section {
+        margin-top: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .main-section .container {
+        display: flex;
+    }
+
+    .hero {
+        width: 40%;
+    }
+
+    .hero__img {
+        max-width: 80%;
+    }
+
+    .text-container {
+        width: 55%;
+    }
+
+    .articles {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .article {
+        width: 30%;
+    }
+
+    .article__title {
+        font-size: 1.7rem;
+    }
+
+    .article__text {
+        font-size: 1rem;
+    }
+}
