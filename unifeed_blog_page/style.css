@@ -22,6 +22,10 @@ img {
     display: none;
 }
 
+.d_none_mobile {
+    display: none;
+}
+
 .main-section__text,
 .article__text,
 .copyright {
@@ -63,6 +67,64 @@ img {
     
     padding: 2.5rem 0;
 }
+
+.mobile-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height: 100vh;
+    background: white;
+    opacity: 0.95;
+}
+
+.slideDown {
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.mobile-nav__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-list__item {
+    margin: 1rem;
+}
+
+.mobile-item__link {
+    text-decoration: none;
+    color: #EE7C0E;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.mobile-subscribe-btn {
+    color: white;
+    padding: 1rem;
+    background: #EE7C0E;
+    border-radius: 10px;
+}
+
+.close-btn {
+    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: black;
+    background: #EE7C0E;
+    border: none;
+}
+
 
 /*================
     Main Section
@@ -123,6 +185,12 @@ img {
         color: black;
         font-weight: bold;
         border-radius: 10px;
+        transition: 0.2s;
+    }
+
+    .subscribe-btn:hover {
+        -webkit-box-shadow: 2px 2px 7px 2px #000000; 
+        box-shadow: 2px 2px 7px 2px  #000000;
     }
 
     .footer {
@@ -133,6 +201,10 @@ img {
 }
 
 @media (min-width: 900px) {
+    .item__link:hover {
+        color: #1F1F1F;
+    }
+
     .main-section {
         margin-top: 2rem;
         margin-bottom: 2.5rem;
@@ -161,6 +233,12 @@ img {
 
     .article {
         width: 30%;
+        transition: 0.2s;
+    }
+
+    .article:hover {
+        -webkit-box-shadow: -10px 0px 13px -7px #EE7C0E, 10px 0px 13px -7px #EE7C0E, 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: -10px 0px 13px -7px #EE7C0E, 10px 0px 13px -7px #EE7C0E, 5px 5px 15px 5px rgba(0,0,0,0);
     }
 
     .article__title {
@@ -169,5 +247,22 @@ img {
 
     .article__text {
         font-size: 1rem;
+    }
+
+    footer {
+        margin-top: 3rem;
+    }
+}
+
+@-webkit-keyframes slideInDown {
+    0% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
     }
 }
