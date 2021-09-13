@@ -57,6 +57,12 @@ img {
     padding: 1rem;
     width: 100%;
     margin: 1.25rem 0;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.cta-btn:hover {
+    opacity: 0.85;
 }
 
 .cta-btn span {
@@ -153,5 +159,37 @@ img {
 
     .footer__right {
         padding-bottom: 1rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .container {
+        width: 80%;
+        max-width: 1200px;
+    }
+
+    .editor-section {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .right-side {
+        width: 40%;
+        margin: 0;
+    }
+
+    .left-side {
+        width: 55%;
+        padding: 6rem 0;
+    }
+
+    .editor-section img {
+        max-width: 100%;;
+    }
+
+    a:hover {
+        color: black;
     }
 }
