@@ -13,10 +13,98 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
 img {
     max-width: 100%;
+}
+
+.d_none {
+    display: none;
+}
+
+
+
+
+
+
+.header {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-section__title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.main-section__text {
+    color: #2E3231;
+    font-size: 1.125rem;
+    text-align: center;
+}
+
+.cta-btn {
+    background: black;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    padding: 1rem;
+    width: 100%;
+    margin: 1.25rem 0;
+}
+
+.cta-btn span {
+    color: #ADAEAE;
+    font-weight: 200;
+}
+
+.img-div img {
+    padding-top: 3rem;
+    margin-bottom: -7px;
+}
+
+.right-side {
+    padding: 4rem 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.editor-section__title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.editor-section__text {
+    color: #2E3231;
+    font-size: 1.125rem;
+}
+
+.editor-section .cta-btn {
+    width: 60%;
+}
+
+.footer {
+    padding: 3rem 0 2rem 0;
+}
+
+.footer__right {
+    margin-top: 1rem;
+}
+
+.footer__right a {
+    text-decoration: none;
+    color: #2E3231;
+    font-size: 1.125rem;
+}
+
+.footer__right a:first-child {
+    margin-right: .5rem;
 }
