@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;  /* hide mobile navigation */
 }
 
 .background {
@@ -33,6 +34,52 @@ img {
 
 .header__right {
     display: none;
+}
+
+.header__right--mobile {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 100px);
+    background: #E3CED9;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    transform: translateX(100%);
+    transition: transform 0.5s ease-out;
+}
+
+.mobile-active {
+    transform: translateX(0%);
+}
+
+.header__right--mobile img {
+    width: 40px;
+}
+
+.header__right--mobile a {
+    text-decoration: none;
+    color: #2E3231;
+    font-size: 1.7rem;
+}
+
+.burger {
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 4px;
+    background-color: black;
+}
+
+.burger .line2 {
+    margin: .3rem 0;
 }
 
 .main-section__title {
@@ -114,7 +161,7 @@ img {
 }
 
 @media (min-width: 600px) {
-    .header__mobile {
+    .burger {
         display: none;
     }
 
