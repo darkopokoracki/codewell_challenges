@@ -24,3 +24,29 @@
     padding: $s-1;
     font-size: 1.4rem;
 }
+
+@mixin paragraph {
+    font-size: 1.125rem;
+    color: $paragraph_color;
+    line-height: 1.6;
+}
+
+@mixin input {
+    border: 2px solid #CCCCCB;
+    border-radius: 7px;
+    padding: $s-1;
+    font-size: 1rem;
+}
+
+@mixin escrowLink {
+    color: $paragraph_color;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+@mixin logo {
+    text-decoration: none;
+    color: $black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}

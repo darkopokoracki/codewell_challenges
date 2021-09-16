@@ -145,6 +145,240 @@ img {
   margin-bottom: .3rem;
 }
 
+.hero-section {
+  background: #F0EEEB;
+  padding: 1rem;
+  padding-bottom: 3rem;
+}
+
+.hero-section__left {
+  margin-top: 2rem;
+}
+
+.hero-section__left h1 {
+  font-size: 2.2rem;
+  color: #292929;
+  margin-bottom: 1rem;
+}
+
+.hero-section__left .hero-section__text {
+  font-size: 1.125rem;
+  color: #5A5343;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.hero-section__left .checkmark-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: .5rem;
+}
+
+.hero-section__left .checkmark-div img {
+  margin-right: 1rem;
+}
+
+.hero-section__left .checkmark-div p {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #5A5343;
+}
+
+.hero-section__left form {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hero-section__left form input {
+  border: 2px solid #CCCCCB;
+  border-radius: 7px;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+.hero-section__left form button {
+  border: none;
+  border-radius: 10px;
+  background: #000000;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.img-section {
+  padding: 4rem 1rem;
+  overflow-x: auto;
+}
+
+.img-section .img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.img-section .img-wrapper img {
+  width: 100px;
+  max-width: 100%;
+  margin-right: 1rem;
+}
+
+.escrow-section {
+  padding: 1rem;
+}
+
+.escrow-section .escrow-flex {
+  background: #F0EEEB;
+  padding: 2rem;
+  padding-bottom: 0;
+  border-radius: 10px;
+}
+
+.escrow-section .escrow-flex .left .escrow-section__title {
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.escrow-section .escrow-flex .left .escrow-section__text {
+  font-size: 1.125rem;
+  color: #5A5343;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.escrow-section .escrow-flex .left .escrow-section__link {
+  color: #5A5343;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.editor-section {
+  padding: 1rem;
+}
+
+.editor-section .editor__right {
+  margin-bottom: 2rem;
+}
+
+.editor-section .editor__right .editor-section__title {
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+.editor-section .editor__right .editor-section__text {
+  font-size: 1.125rem;
+  color: #5A5343;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.editor-section .editor__right .editor-section__link {
+  color: #5A5343;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.footer {
+  background: #000000;
+  padding: 3rem 1rem;
+  color: white;
+}
+
+.footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer-container a {
+  display: block;
+}
+
+.footer .footer-container .logo {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.footer .footer-container .spense {
+  width: 100%;
+  margin-bottom: 2rem;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.footer .footer-container .spense p {
+  line-height: 1.5;
+  font-size: 1.125rem;
+  color: #979692;
+}
+
+.footer .footer-container .col {
+  width: 45%;
+  margin-bottom: 1rem;
+}
+
+.footer .footer-container .col h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer .footer-container .col a {
+  text-decoration: none;
+  color: #979692;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer .footer-container .company {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.footer .footer-container .sitemap {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+.footer .footer-container .resources {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+.footer .footer-container .opportunities {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
 .mobile-active {
   -webkit-transform: translateX(0%) !important;
           transform: translateX(0%) !important;

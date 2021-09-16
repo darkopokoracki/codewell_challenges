@@ -24,10 +24,7 @@
         align-items: center;
 
         .logo {
-            text-decoration: none;
-            color: $black;
-            font-size: 1.2rem;
-            font-weight: bold;
+            @include logo;
         }
 
         .nav-list {
@@ -94,6 +91,201 @@
         }
     }
 }
+
+.hero-section {
+    background: $background_color;
+    padding: $s-1;
+    padding-bottom: $s-3;
+
+    &__left {
+        margin-top: $s-2;
+
+        h1 {
+            font-size: 2.2rem;
+            color: $title_color;
+            margin-bottom: $s-1;
+        }
+
+        .hero-section__text {
+            @include paragraph;
+            margin-bottom: $s-1;
+        }
+
+        .checkmark-div {
+            display: flex;
+            align-items: center;
+            margin-bottom: .5rem;
+
+            img {
+                margin-right: $s-1;
+            }
+
+            p {
+                font-size: 1.125rem;
+                font-weight: bold;
+                color: $paragraph_color;
+            }
+        }
+
+        form {
+            margin-top: $s-2;
+            display: flex;
+            flex-wrap: wrap;
+
+            input {
+                @include input;
+                margin-right: $s-1;
+            }
+
+            button {
+                @include button;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+.img-section {
+    padding: $s-4 $s-1;
+    overflow-x: auto;
+
+    .img-wrapper {
+        display: flex;
+        justify-content: space-between;
+        
+        img {
+            // display: block;
+            width: 100px;
+            max-width: 100%;
+            margin-right: $s-1;
+        }
+    }
+}
+
+.escrow-section {
+    padding: $s-1;
+
+    .escrow-flex {
+        background: $background_color;
+        padding: $s-2;
+        padding-bottom: 0;
+        border-radius: 10px;
+
+        .left {
+            .escrow-section__title {
+                font-size: 2rem;
+                line-height: 1.4;
+                margin-bottom: $s-1;
+            }
+
+            .escrow-section__text {
+                @include paragraph;
+                margin-bottom: 1.5rem;
+            }
+
+            .escrow-section__link {
+                @include escrowLink;
+            }
+        }
+    }
+}
+
+.editor-section {
+    padding: $s-1;
+
+    .editor {
+        &__left {
+
+        }
+
+        &__right {
+            margin-bottom: $s-2;
+
+            .editor-section__title {
+                font-size: 2rem;
+                line-height: 1.4;
+                margin-bottom: $s-1;
+            }
+
+            .editor-section__text {
+                @include paragraph;
+                margin-bottom: $s-2;
+            }
+
+            .editor-section__link {
+                @include escrowLink;
+            }
+        }
+    }
+}
+
+.footer {
+    background: $black;
+    padding: $s-3 $s-1;
+    color: white;
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        a {
+            display: block;
+        }
+
+        .logo {
+            @include logo;
+            color: $white;
+            margin-bottom: $s-1;
+        }
+
+        .spense {
+            width: 100%;
+            margin-bottom: $s-2;
+            order: 1;
+
+            p {
+                line-height: 1.5;
+                font-size: 1.125rem;
+                color: #979692;
+            }
+        }
+
+        .col {
+            width: 45%;
+            margin-bottom: $s-1;
+
+            h4 {
+                font-size: 1.2rem;
+                margin-bottom: $s-1;
+            }
+
+            a {
+                text-decoration: none;
+                color: #979692;
+                font-size: 1.2rem;
+                margin-bottom: $s-1;
+            }
+        }
+
+        .company {
+            order: 2;
+        }
+
+        .sitemap {
+            order: 4;
+        }
+
+        .resources {
+            order: 5;
+        }
+
+        .opportunities {
+            order: 3;
+        }
+    }
+}
+
 
 .mobile-active {
     transform: translateX(0%) !important;
