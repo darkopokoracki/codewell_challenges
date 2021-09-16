@@ -1,6 +1,8 @@
 @import '_reset.scss';
 @import '_variables.scss';
 @import '_components.scss';
+@import '_media-queries';
+
 
 .pre-header {
     background: $black;
@@ -11,6 +13,10 @@
         text-align: center;
         font-size: 1.125rem;
         line-height: 1.5;
+    }
+
+    @include tablet {
+        padding: $s-2;
     }
 }
 
@@ -27,10 +33,10 @@
             @include logo;
         }
 
-        .nav-list {
+        .nav-mobile {
             position: absolute;
             right: 0;
-            top: 200px;
+            top: 190px;
             width: 100%;
             background: $black;
             height: 100vh;
@@ -71,6 +77,49 @@
             }
         }
         
+        .nav-tablet {
+            display: none !important;
+
+            @include tablet {
+                display: flex !important;
+                justify-content: space-between;
+                width: 70%;
+
+                .nav-tablet__center {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 50%;
+
+                    li {
+                        list-style: none;
+                        a {
+                            @include link;
+                        }
+                    }
+                }
+
+                .nav-tablet__right {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 50%;
+
+                    li {
+                        list-style: none;
+
+                        a {
+                            @include link;
+                        }
+                    }
+                    
+                    button {
+                        @include button;
+                    }
+                }
+            }
+        }
+
         .burger {
             .line1,
             .line3 {
@@ -79,6 +128,10 @@
 
             .line2 {
                 transition: opacity 0.4s ease-in-out;
+            }
+
+            @include tablet {
+                display: none;
             }
         }
         
@@ -89,6 +142,10 @@
             background: $black;
             margin-bottom: .3rem;
         }
+    }
+
+    @include tablet {
+        padding: $s-2;
     }
 }
 
@@ -143,10 +200,14 @@
             }
         }
     }
+
+    @include tablet {
+        padding: $s-2;
+    }
 }
 
 .img-section {
-    padding: $s-4 $s-1;
+    padding: $s-3 $s-1;
     overflow-x: auto;
 
     .img-wrapper {
@@ -154,11 +215,14 @@
         justify-content: space-between;
         
         img {
-            // display: block;
-            width: 100px;
-            max-width: 100%;
+            display: block;
+            // width: 100px;
+            max-width: 30%;
             margin-right: $s-1;
         }
+    }
+    @include tablet {
+        padding: $s-2;
     }
 }
 
@@ -187,6 +251,12 @@
                 @include escrowLink;
             }
         }
+        @include tablet {
+            padding: $s-4;
+        }
+    }
+    @include tablet {
+        padding: $s-2;
     }
 }
 
@@ -217,6 +287,9 @@
             }
         }
     }
+    @include tablet {
+        padding: $s-2;
+    }
 }
 
 .footer {
@@ -240,9 +313,12 @@
         }
 
         .spense {
-            width: 100%;
             margin-bottom: $s-2;
             order: 1;
+
+            @include tablet {
+                width: 40%;
+            }
 
             p {
                 line-height: 1.5;
@@ -252,7 +328,7 @@
         }
 
         .col {
-            width: 45%;
+            margin-right: $s-1;
             margin-bottom: $s-1;
 
             h4 {
@@ -283,6 +359,9 @@
         .opportunities {
             order: 3;
         }
+    }
+    @include tablet {
+        padding: $s-2;
     }
 }
 

@@ -1,12 +1,19 @@
 @mixin button {
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     background: $black;
     cursor: pointer;
-    padding: $s-1;
-    font-size: 1.4rem;
+    padding: 1.2rem;
+    font-size: 1.125rem;
     color: $white;
-    font-weight: bold;
+    font-weight: 600;
+}
+
+@mixin link {
+    text-decoration: none;
+    color: $black;
+    font-size: 1.125rem;
+    font-weight: 500;
 }
 
 @mixin burgerLink {
