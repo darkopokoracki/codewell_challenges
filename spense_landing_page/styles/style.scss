@@ -87,7 +87,7 @@
             @include tablet {
                 display: flex !important;
                 justify-content: space-between;
-                width: 70%;
+                width: 75%;
 
                 .nav-tablet__center {
                     display: flex;
@@ -238,9 +238,6 @@
 
             .hero-section__right {
                 width: 40%;
-                img {
-                    max-width: 90%;
-                }
             }
         }
     }
@@ -296,6 +293,7 @@
         }
         @include tablet {
             padding: $s-4;
+            padding-bottom: 0;
         }
 
         @include desktop {
@@ -408,6 +406,11 @@
                 color: #979692;
                 font-size: 1.2rem;
                 margin-bottom: $s-1;
+                transition-duration: 0.2s;
+
+                &:hover {
+                    color: $white;
+                }
             }
         }
 

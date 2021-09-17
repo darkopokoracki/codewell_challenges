@@ -7,6 +7,12 @@
     font-size: 1.125rem;
     color: $white;
     font-weight: 600;
+
+    &:hover {
+        background: $white;
+        color: $black;
+        box-shadow: 4px 4px 12px 4px #000000;
+    }
 }
 
 @mixin link {
@@ -14,6 +20,10 @@
     color: $black;
     font-size: 1.125rem;
     font-weight: 500;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 @mixin burgerLink {
@@ -49,6 +59,11 @@
     color: $paragraph_color;
     font-weight: bold;
     font-size: 1.3rem;
+    transition-duration: 0.2s;
+
+    &:hover {
+        color: $black;
+    }
 }
 
 @mixin logo {

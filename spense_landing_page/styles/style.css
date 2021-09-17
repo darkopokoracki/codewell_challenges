@@ -155,7 +155,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 70%;
+    width: 75%;
   }
   .header .header-nav .nav-tablet .nav-tablet__center {
     display: -webkit-box;
@@ -178,6 +178,9 @@ img {
     font-size: 1.125rem;
     font-weight: 500;
   }
+  .header .header-nav .nav-tablet .nav-tablet__center li a:hover {
+    text-decoration: underline;
+  }
   .header .header-nav .nav-tablet .nav-tablet__right {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -198,6 +201,9 @@ img {
     font-size: 1.125rem;
     font-weight: 500;
   }
+  .header .header-nav .nav-tablet .nav-tablet__right li a:hover {
+    text-decoration: underline;
+  }
   .header .header-nav .nav-tablet .nav-tablet__right button {
     border: none;
     border-radius: 5px;
@@ -207,6 +213,12 @@ img {
     font-size: 1.125rem;
     color: #ffffff;
     font-weight: 600;
+  }
+  .header .header-nav .nav-tablet .nav-tablet__right button:hover {
+    background: #ffffff;
+    color: #000000;
+    -webkit-box-shadow: 4px 4px 12px 4px #000000;
+            box-shadow: 4px 4px 12px 4px #000000;
   }
 }
 
@@ -339,6 +351,13 @@ img {
   font-size: 1.1rem;
 }
 
+.hero-section .hero-flex .hero-section__left form button:hover {
+  background: #ffffff;
+  color: #000000;
+  -webkit-box-shadow: 4px 4px 12px 4px #000000;
+          box-shadow: 4px 4px 12px 4px #000000;
+}
+
 @media screen and (min-width: 1000px) {
   .hero-section .hero-flex {
     display: -webkit-box;
@@ -357,9 +376,6 @@ img {
   }
   .hero-section .hero-flex .hero-section__right {
     width: 40%;
-  }
-  .hero-section .hero-flex .hero-section__right img {
-    max-width: 90%;
   }
 }
 
@@ -423,11 +439,18 @@ img {
   color: #5A5343;
   font-weight: bold;
   font-size: 1.3rem;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.escrow-section .escrow-flex .left .escrow-section__link:hover {
+  color: #000000;
 }
 
 @media screen and (min-width: 700px) {
   .escrow-section .escrow-flex {
     padding: 4rem;
+    padding-bottom: 0;
   }
 }
 
@@ -478,6 +501,12 @@ img {
   color: #5A5343;
   font-weight: bold;
   font-size: 1.3rem;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.editor-section .editor__right .editor-section__link:hover {
+  color: #000000;
 }
 
 @media screen and (min-width: 1000px) {
@@ -571,6 +600,12 @@ img {
   color: #979692;
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.footer .footer-container .col a:hover {
+  color: #ffffff;
 }
 
 .footer .footer-container .company {
