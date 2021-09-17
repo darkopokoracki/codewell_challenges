@@ -18,6 +18,10 @@
     @include tablet {
         padding: $s-2;
     }
+
+    @include desktop {
+        padding: $s-1;
+    }
 }
 
 .header {
@@ -118,6 +122,24 @@
                     }
                 }
             }
+
+            @include desktop {
+                .nav-tablet__center {
+                    justify-content: center;
+
+                    li + li {
+                        margin-left: 1.5rem;
+                    }
+                }
+
+                .nav-tablet__right {
+                    justify-content: flex-end;
+
+                    button {
+                        margin-left: 1.5rem;
+                    }
+                }
+            }
         }
 
         .burger {
@@ -154,49 +176,71 @@
     padding: $s-1;
     padding-bottom: $s-3;
 
-    &__left {
-        margin-top: $s-2;
-
-        h1 {
-            font-size: 2.2rem;
-            color: $title_color;
-            margin-bottom: $s-1;
-        }
-
-        .hero-section__text {
-            @include paragraph;
-            margin-bottom: $s-1;
-        }
-
-        .checkmark-div {
-            display: flex;
-            align-items: center;
-            margin-bottom: .5rem;
-
-            img {
-                margin-right: $s-1;
-            }
-
-            p {
-                font-size: 1.125rem;
-                font-weight: bold;
-                color: $paragraph_color;
-            }
-        }
-
-        form {
+    .hero-flex {
+        .hero-section__left {
             margin-top: $s-2;
-            display: flex;
-            flex-wrap: wrap;
+    
+            h1 {
+                font-size: 2.2rem;
+                color: $title_color;
+                margin-bottom: $s-1;
 
-            input {
-                @include input;
-                margin-right: $s-1;
+                @include desktop {
+                    font-size: 3rem;
+                }
+            }
+    
+            .hero-section__text {
+                @include paragraph;
+                margin-bottom: $s-1;
+            }
+    
+            .checkmark-div {
+                display: flex;
+                align-items: center;
+                margin-bottom: .5rem;
+    
+                img {
+                    margin-right: $s-1;
+                }
+    
+                p {
+                    font-size: 1.125rem;
+                    font-weight: bold;
+                    color: $paragraph_color;
+                }
+            }
+    
+            form {
+                margin-top: $s-2;
+                display: flex;
+                flex-wrap: wrap;
+    
+                input {
+                    @include input;
+                    margin-right: $s-1;
+                }
+    
+                button {
+                    @include button;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        @include desktop {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+
+            .hero-section__left {
+                width: 55%;
             }
 
-            button {
-                @include button;
-                font-size: 1.1rem;
+            .hero-section__right {
+                width: 40%;
+                img {
+                    max-width: 90%;
+                }
             }
         }
     }
@@ -216,8 +260,7 @@
         
         img {
             display: block;
-            // width: 100px;
-            max-width: 30%;
+            width: 100px;
             margin-right: $s-1;
         }
     }
@@ -254,6 +297,17 @@
         @include tablet {
             padding: $s-4;
         }
+
+        @include desktop {
+            display: flex;
+            align-items: center;
+            padding-bottom: 0;
+            padding-top: $s-1;
+
+            .right {
+                width: 70%;
+            }
+        }
     }
     @include tablet {
         padding: $s-2;
@@ -284,6 +338,19 @@
 
             .editor-section__link {
                 @include escrowLink;
+            }
+        }
+        @include desktop {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+
+            &__left {
+                width: 60%;
+            }
+
+            &__right {
+                width: 40%;
             }
         }
     }

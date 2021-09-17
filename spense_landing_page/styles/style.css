@@ -10,6 +10,12 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -34,6 +40,12 @@ img {
 @media screen and (min-width: 700px) {
   .pre-header {
     padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .pre-header {
+    padding: 1rem;
   }
 }
 
@@ -198,6 +210,25 @@ img {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .header .header-nav .nav-tablet .nav-tablet__center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .header-nav .nav-tablet .nav-tablet__center li + li {
+    margin-left: 1.5rem;
+  }
+  .header .header-nav .nav-tablet .nav-tablet__right {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header .header-nav .nav-tablet .nav-tablet__right button {
+    margin-left: 1.5rem;
+  }
+}
+
 .header .header-nav .burger .line1,
 .header .header-nav .burger .line3 {
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
@@ -236,24 +267,30 @@ img {
   padding-bottom: 3rem;
 }
 
-.hero-section__left {
+.hero-section .hero-flex .hero-section__left {
   margin-top: 2rem;
 }
 
-.hero-section__left h1 {
+.hero-section .hero-flex .hero-section__left h1 {
   font-size: 2.2rem;
   color: #292929;
   margin-bottom: 1rem;
 }
 
-.hero-section__left .hero-section__text {
+@media screen and (min-width: 1000px) {
+  .hero-section .hero-flex .hero-section__left h1 {
+    font-size: 3rem;
+  }
+}
+
+.hero-section .hero-flex .hero-section__left .hero-section__text {
   font-size: 1.125rem;
   color: #5A5343;
   line-height: 1.6;
   margin-bottom: 1rem;
 }
 
-.hero-section__left .checkmark-div {
+.hero-section .hero-flex .hero-section__left .checkmark-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,17 +300,17 @@ img {
   margin-bottom: .5rem;
 }
 
-.hero-section__left .checkmark-div img {
+.hero-section .hero-flex .hero-section__left .checkmark-div img {
   margin-right: 1rem;
 }
 
-.hero-section__left .checkmark-div p {
+.hero-section .hero-flex .hero-section__left .checkmark-div p {
   font-size: 1.125rem;
   font-weight: bold;
   color: #5A5343;
 }
 
-.hero-section__left form {
+.hero-section .hero-flex .hero-section__left form {
   margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -282,7 +319,7 @@ img {
       flex-wrap: wrap;
 }
 
-.hero-section__left form input {
+.hero-section .hero-flex .hero-section__left form input {
   border: 2px solid #CCCCCB;
   border-radius: 7px;
   padding: 1rem;
@@ -290,7 +327,7 @@ img {
   margin-right: 1rem;
 }
 
-.hero-section__left form button {
+.hero-section .hero-flex .hero-section__left form button {
   border: none;
   border-radius: 5px;
   background: #000000;
@@ -300,6 +337,30 @@ img {
   color: #ffffff;
   font-weight: 600;
   font-size: 1.1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .hero-section .hero-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hero-section .hero-flex .hero-section__left {
+    width: 55%;
+  }
+  .hero-section .hero-flex .hero-section__right {
+    width: 40%;
+  }
+  .hero-section .hero-flex .hero-section__right img {
+    max-width: 90%;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -324,7 +385,7 @@ img {
 
 .img-section .img-wrapper img {
   display: block;
-  max-width: 30%;
+  width: 100px;
   margin-right: 1rem;
 }
 
@@ -370,6 +431,22 @@ img {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .escrow-section .escrow-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 0;
+    padding-top: 1rem;
+  }
+  .escrow-section .escrow-flex .right {
+    width: 70%;
+  }
+}
+
 @media screen and (min-width: 700px) {
   .escrow-section {
     padding: 2rem;
@@ -401,6 +478,27 @@ img {
   color: #5A5343;
   font-weight: bold;
   font-size: 1.3rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .editor-section .editor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .editor-section .editor__left {
+    width: 60%;
+  }
+  .editor-section .editor__right {
+    width: 40%;
+  }
 }
 
 @media screen and (min-width: 700px) {
