@@ -6,4 +6,82 @@
 
 body {
     font-family: 'Nunito Sans', sans-serif;
+    background: #F6F9FE;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+header {
+    padding: 1rem 0;
+    margin-bottom: 5rem;
+}
+
+header .nav-item + .nav-item {
+    margin-left: 1rem;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.join {
+    border: none;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    padding: 1rem;
+    background: #372865;
+    color: white;
+}
+
+.join:hover {
+    opacity: 0.9;
+}
+
+header .nav-link {
+    color: #4B4B4A;
+    font-size: 1.125rem;
+    letter-spacing: 0.5px;
+}
+
+header .nav-link:hover {
+    color: black;
+}
+
+
+
+#hero-right {
+    width: 60%;
+}
+
+#hero-left {
+    margin-right: 3rem;
+    padding-top: 3rem;
+}
+
+.learn-more {
+    background: #372865;
+    color: #CCC1E6;
+    padding: 0.5rem 1rem;
+    border-radius: 100px;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+
+    display: inline-block;
+}
+
+.learn-more a {
+    font-weight: bold;
+    color: #CCC1E6;
+    text-decoration: underline;
+}
+
+.hero-section__title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #372865;
+    margin-bottom: 1.5rem;
+}
+
