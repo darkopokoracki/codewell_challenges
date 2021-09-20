@@ -23,6 +23,10 @@ header .nav-item + .nav-item {
     margin-left: 1rem;
 }
 
+.hamburger-img {
+    display: none;
+}
+
 .logo {
     cursor: pointer;
 }
@@ -58,7 +62,7 @@ header .nav-link:hover {
 
 #hero-left {
     margin-right: 3rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .learn-more {
@@ -83,5 +87,80 @@ header .nav-link:hover {
     font-weight: bold;
     color: #372865;
     margin-bottom: 1.5rem;
+}
+
+.hero-section__text {
+    font-size: 1.125rem;
+    color: #4B4B4A;
+    letter-spacing: 0.5px;
+}
+
+.email-input {
+    padding: 1rem;
+    font-size: 1.125rem;
+    border: 2px solid #E1E1E1;
+    border-radius: 7px;
+    margin-right: 1rem;
+}
+
+::placeholder {
+    color: rgb(200, 200, 200);
+}
+
+footer {
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+#img-container img {
+    margin-right: 1rem;
+}
+
+.footer__text {
+    color: #4B4B4A;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .navbar {
+        display: none;
+    }
+
+    .hamburger-img {
+        display: inline-block;
+    }
+
+    #hero-right {
+        display: none;
+    }
+
+    #hero-left {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    .email-input {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .email-input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    form button {
+        width: 100%;
+    }
+
+    #img-container {
+        flex-wrap: wrap;
+    }
+
+    #img-container img {
+        margin-bottom: 1rem;
+    }
 }
 
