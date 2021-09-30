@@ -1,1 +1,170 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background: url(../Assets/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.newsletter {
+  max-width: 400px;
+}
+
+.newsletter__title {
+  background: url("../Assets/Pattern.png");
+  background-color: #2355F2;
+  padding: 3rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.newsletter__title h2 {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.newsletter__content {
+  background: white;
+  padding: 2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.newsletter__content .paragraph {
+  color: #6B6B6B;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: .9rem;
+}
+
+.newsletter__content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.newsletter__content form input {
+  padding: .7rem;
+  border-radius: 5px;
+  border: 2px solid gainsboro;
+  margin-right: .5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #F5F7FA;
+  -webkit-transition: outline-color 300ms ease;
+  transition: outline-color 300ms ease;
+}
+
+.newsletter__content form input::-webkit-input-placeholder {
+  color: #b4b4b4;
+  letter-spacing: 0.5px;
+}
+
+.newsletter__content form input:-ms-input-placeholder {
+  color: #b4b4b4;
+  letter-spacing: 0.5px;
+}
+
+.newsletter__content form input::-ms-input-placeholder {
+  color: #b4b4b4;
+  letter-spacing: 0.5px;
+}
+
+.newsletter__content form input::placeholder {
+  color: #b4b4b4;
+  letter-spacing: 0.5px;
+}
+
+.newsletter__content form input:focus {
+  outline-color: white;
+}
+
+.newsletter__content form button {
+  padding: .8rem;
+  border: none;
+  border-radius: 5px;
+  background: #2355F2;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.newsletter__content form button:hover {
+  opacity: 0.9;
+}
+
+.newsletter__content span {
+  color: #b4b4b4;
+  font-size: .9rem;
+}
+
+.newsletter__content .user-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.newsletter__content .user-avatar__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.newsletter__content .user-avatar__container .user-avatar-img {
+  margin-right: .7rem;
+}
+
+.newsletter__content .user-avatar__container .user-avatar-img img {
+  display: block;
+  max-width: 100%;
+}
+
+.newsletter__content .user-avatar__container .user-avatar-info .name {
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.newsletter__content .user-avatar__container .user-avatar-info .job {
+  color: #6B6B6B;
+  font-size: .9rem;
+}
+
+.newsletter__content blockquote {
+  color: #6B6B6B;
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: .9rem;
+}
+/*# sourceMappingURL=style.css.map */

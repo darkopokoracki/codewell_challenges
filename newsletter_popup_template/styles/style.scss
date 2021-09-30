@@ -1,0 +1,123 @@
+@import '_components';
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background: url(../Assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter {
+    max-width: 400px;
+}
+
+.newsletter {
+    &__title {
+        background: url('../Assets/Pattern.png');
+        background-color: #2355F2;
+        padding: 3rem;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+
+        h2 {
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+}
+
+.newsletter {
+    &__content {
+        background: white;
+        padding: 2rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+
+        .paragraph {
+            color: #6B6B6B;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: .9rem;
+        }
+
+
+        form {
+            display: flex;
+            margin-bottom: 1rem;
+
+            input {
+                padding: .7rem;
+                border-radius: 5px;
+                border: 2px solid rgb(220, 220, 220);
+                margin-right: .5rem;
+                flex: 1;
+                background: #F5F7FA;
+                transition: outline-color 300ms ease;
+
+                &::placeholder {
+                    color: rgb(180, 180, 180);
+                    letter-spacing: 0.5px;
+                }
+
+                &:focus {
+                    outline-color: white;
+                }
+            }
+
+            button {
+                padding: .8rem;
+                border: none;
+                border-radius: 5px;
+                background: #2355F2;
+                color: white;
+                font-weight: 600;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+
+
+        span {
+            color: rgb(180, 180, 180);
+            font-size: .9rem;
+        }
+
+
+        .user-avatar {
+            display: flex;
+            justify-content: center;
+            margin-top: 1.5rem;
+
+            &__container {
+                @include userAvatar;
+            }
+        }
+
+        blockquote {
+            color: #6B6B6B;
+            margin-top: 1.5rem;
+            text-align: center;
+            font-size: .9rem;
+        }
+    }
+}
+
