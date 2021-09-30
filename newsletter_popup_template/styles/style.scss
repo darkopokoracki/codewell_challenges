@@ -121,3 +121,20 @@ body {
     }
 }
 
+@media (max-width: 500px) {
+    body {
+        background: none;
+    }
+
+    .newsletter {
+        &__title {
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        &__content {
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+    }
+}

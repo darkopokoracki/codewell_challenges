@@ -167,4 +167,18 @@ body {
   text-align: center;
   font-size: .9rem;
 }
+
+@media (max-width: 500px) {
+  body {
+    background: none;
+  }
+  .newsletter__title {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .newsletter__content {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
