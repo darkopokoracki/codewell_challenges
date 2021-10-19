@@ -9,14 +9,20 @@ html {
   font-family: 'Inter', sans-serif;
 }
 
-.container {
-  width: 80%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 img {
   display: block;
   max-width: 100%;
+}
+
+.background-container {
+  background-color: #FBF8F3;
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=signup.css.map */
