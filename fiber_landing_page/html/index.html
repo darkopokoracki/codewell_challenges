@@ -89,7 +89,7 @@
 
     <div class="container">
         <section class="article-section">
-            <a href="#">Why Fiber</a>
+            <a href="#">Why Fiber?</a>
 
             <h2 class="article-section__title">
                 A good portfolio means good <br>
@@ -98,7 +98,7 @@
 
             <div class="articles">
                 <article class="article">
-                    <i class="far fa-clock"></i>
+                    <img src="../Assets/time.svg" alt="Time">
                     <h3 class="article__title">Build in minutes</h3>
                     <p class="article__text">
                         With a selection of premade templates,
@@ -108,7 +108,7 @@
                 </article>
                 
                 <article class="article">
-                    <i class="fas fa-code"></i>
+                    <img src="../Assets/code.svg" alt="Code">
                     <h3 class="article__title">Add custom CSS</h3>
                     <p class="article__text">
                         Customize your personal portfolio even
@@ -118,7 +118,7 @@
                 </article>
 
                 <article class="article">
-                    <i class="fas fa-tablet-alt"></i>
+                    <img src="../Assets/allSizes.svg" alt="allSizes">
                     <h3 class="article__title">Responsive</h3>
                     <p class="article__text">
                         All Fiber templates are fully responsive to
@@ -152,10 +152,12 @@
         <article class="portfolio">
             <div class="user">
                 <img src="../Assets/useravatar1.svg" alt="User Avatar 1">
-                <h5 class="user__name">Sarah Andrews</h5>
-                <span class="user__sallary">$100k in revenue</span>
+                <div class="user__info">
+                    <h5 class="user__name">Sarah Andrews</h5>
+                    <span class="user__sallary">$100k in revenue</span>
+                </div>
             </div>
-            <p class="portfolio">
+            <p class="portfolio__text">
                 Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfolio has attracted a lot of clients and made me more than $100k.
             </p>
             <button type="button" class="portfolio-btn">
@@ -166,8 +168,10 @@
         <article class="portfolio">
             <div class="user">
                 <img src="../Assets/useravatar2.svg" alt="User Avatar 2">
-                <h5 class="user__name">Mathew Higgins</h5>
-                <span class="user__sallary">$20k in revenue</span>
+                <div class="user__info">
+                    <h5 class="user__name">Mathew Higgins</h5>
+                    <span class="user__sallary">$20k in revenue</span>
+                </div>
             </div>
             <p class="portfolio__text">
                 I have been getting a LOT of leads ever since I used Fiber's premade templates, now I just need to work on my case studies and I'll be ready to go!
@@ -180,10 +184,12 @@
         <article class="portfolio">
             <div class="user">
                 <img src="../Assets/useravatar2.svg" alt="User Avatar 2">
-                <h5 class="user__name">Janice Dave</h5>
-                <span class="user__sallary">$30k in revenue</span>
+                <div class="user__info">
+                    <h5 class="user__name">Janice Dave</h5>
+                    <span class="user__sallary">$30k in revenue</span>
+                </div>
             </div>
-            <p class="portfolio">
+            <p class="portfolio__text">
                 I only just started freelancing this year and I have already made more than I ever made in my full-time job. The templates are just so amazing.
             </p>
             <button type="button" class="portfolio-btn">
@@ -192,43 +198,45 @@
         </article>
     </section>
 
-    <div class="container">
-        <footer class="footer">
-            <div class="col">
-                <h6>Fiber</h6>
-                <p>
-                    With Fiber, you can setup your own personal portfolio in minutes
-                    with dozens of premade, beautiful templates.
-                </p>
-                <br>
-                <span>Made with &hearts; in the Serbia</span>
-            </div>
-            <div class="col">
-                <h6>Sitemap</h6>
-                <a href="#">Homepage</a>
-                <a href="#">Pricing</a>
-                <a href="#">Testimonials</a>
-                <a href="#">Features</a>
-            </div>
-            <div class="col">
-                <h6>Resources</h6>
-                <a href="#">Support</a>
-                <a href="#">Contact</a>
-                <a href="#">FAQ</a>
-            </div>
-            <div class="col">
-                <h6>Company</h6>
-                <a href="#">About</a>
-                <a href="#">Customers</a>
-                <a href="#">Blog</a>
-            </div>
-            <div class="col">
-                <h6>Portfolios</h6>
-                <a href="#">Sarah Andrews</a>
-                <a href="#">Mathew Higgins</a>
-                <a href="#">Janice Dave</a>
-            </div>
-        </footer>
+    <div class="background-container">
+        <div class="container">
+            <footer class="footer">
+                <div class="col">
+                    <h6>Fiber</h6>
+                    <p>
+                        With Fiber, you can setup your own personal portfolio in minutes
+                        with dozens of premade, beautiful templates.
+                    </p>
+                    <br>
+                    <span>Made with &hearts; in the Serbia</span>
+                </div>
+                <div class="col">
+                    <h6>Sitemap</h6>
+                    <a href="#">Homepage</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Testimonials</a>
+                    <a href="#">Features</a>
+                </div>
+                <div class="col">
+                    <h6>Resources</h6>
+                    <a href="#">Support</a>
+                    <a href="#">Contact</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="col">
+                    <h6>Company</h6>
+                    <a href="#">About</a>
+                    <a href="#">Customers</a>
+                    <a href="#">Blog</a>
+                </div>
+                <div class="col">
+                    <h6>Portfolios</h6>
+                    <a href="#">Sarah Andrews</a>
+                    <a href="#">Mathew Higgins</a>
+                    <a href="#">Janice Dave</a>
+                </div>
+            </footer>
+        </div>
     </div>
 </body>
 </html>

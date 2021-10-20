@@ -1,0 +1,51 @@
+@mixin cta-btn {
+    border: none;
+    border-radius: 7px;
+    color: white;
+    background: #4D13D1;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1.125rem;
+    display: block;
+}
+
+@mixin cta-link {
+    color: #4D13D1;
+    font-size: 1.125rem;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+@mixin user {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 1rem;
+    }
+
+    &__name {
+        color: #5017D2;
+        font-weight: bold;
+        font-size: 1.125rem;
+        margin-bottom: .1rem;
+    }
+
+    &__sallary {
+        font-size: 1.125rem;
+        margin-top: .1rem;
+    }
+}
+
+@mixin portfolio-btn {
+    border: 2px solid #E3E3E3;
+    border-radius: 7px;
+    background: white;
+    color: #5017D2;
+    font-weight: bold;
+    padding: 1rem;
+    display: block;
+
+    font-size: 1.25rem;
+}
