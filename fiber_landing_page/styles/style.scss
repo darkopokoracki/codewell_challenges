@@ -2,20 +2,109 @@
 @import '_components';
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: cneter;
+    position: relative;
 
-    padding: 2rem;
-
-    .nav,
-    .buttons {
-        display: none;
+    .desktop-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        padding: 2rem;
+    
+        .nav,
+        .buttons {
+            display: none;
+        }
+    
+        .nav {
+            margin-left: 5rem;
+    
+            ul {
+                display: flex;
+                list-style-type: none;
+    
+                li {
+                    margin: 0 .5rem;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 1.125rem;
+                    }
+                }
+            }
+        }
+    
+        .buttons {
+            .signin-btn {
+                @include sign-btn;
+                background: #FBF8F3;
+            }
+    
+            .signup-btn {
+                @include sign-btn;
+                background: #5017D2;
+                color: white;
+            }
+        }
     }
+
+
+    .mobile-menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background: white;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+
+        .nav-mobile {
+            .close {
+                font-size: 1.5rem;
+            }
+            
+            ul {
+                list-style-type: none;
+                
+                li {
+                    margin: 1rem 0;
+                    display: block;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 1.25rem;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .buttons-mobile {
+        .signin-btn {
+            @include sign-btn;
+            background: #FBF8F3;
+            display: block;
+            width: 100%;
+        }
+
+        .signup-btn {
+            @include sign-btn;
+            background: #5017D2;
+            color: white;
+            display: block;
+            width: 100%;
+        }
+    }
+
 }
 
 .header {
-    a {
+    .logo {
         text-decoration: none;
         color: black;
         font-size: 1.25rem;
@@ -29,6 +118,7 @@
     flex-direction: column-reverse;
     padding: 2rem;
     margin-top: -5rem;
+    pointer-events: none;
 
     .hero-img {
         display: flex;
@@ -214,3 +304,21 @@
         }
     }
 }
+
+
+@media (min-width: 900px) {
+    .header {
+        .desktop-menu {
+            .nav,
+            .buttons {
+                display: block !important;
+            }
+    
+            .burger-menu {
+                display: none;
+            }
+        }
+    }
+}
+
+

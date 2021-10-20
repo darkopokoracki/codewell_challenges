@@ -49,3 +49,12 @@
 
     font-size: 1.25rem;
 }
+
+@mixin sign-btn {
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 1.125rem;
+    padding: 1.25rem;
+    font-weight: bold;
+}

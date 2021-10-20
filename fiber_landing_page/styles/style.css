@@ -14,11 +14,15 @@ img {
   max-width: 100%;
 }
 
+.d_none {
+  display: none !important;
+}
+
 .background-container {
   background-color: #FBF8F3;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .container {
     width: 80%;
     max-width: 1200px;
@@ -27,24 +31,135 @@ img {
 }
 
 .header {
+  position: relative;
+}
+
+.header .desktop-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: cneter;
-      -ms-flex-align: cneter;
-          align-items: cneter;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2rem;
 }
 
-.header .nav,
-.header .buttons {
+.header .desktop-menu .nav,
+.header .desktop-menu .buttons {
   display: none;
 }
 
-.header a {
+.header .desktop-menu .nav {
+  margin-left: 5rem;
+}
+
+.header .desktop-menu .nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.header .desktop-menu .nav ul li {
+  margin: 0 .5rem;
+}
+
+.header .desktop-menu .nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.125rem;
+}
+
+.header .desktop-menu .buttons .signin-btn {
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1.125rem;
+  padding: 1.25rem;
+  font-weight: bold;
+  background: #FBF8F3;
+}
+
+.header .desktop-menu .buttons .signup-btn {
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1.125rem;
+  padding: 1.25rem;
+  font-weight: bold;
+  background: #5017D2;
+  color: white;
+}
+
+.header .mobile-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: white;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.header .mobile-menu .nav-mobile .close {
+  font-size: 1.5rem;
+}
+
+.header .mobile-menu .nav-mobile ul {
+  list-style-type: none;
+}
+
+.header .mobile-menu .nav-mobile ul li {
+  margin: 1rem 0;
+  display: block;
+}
+
+.header .mobile-menu .nav-mobile ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.header .buttons-mobile .signin-btn {
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1.125rem;
+  padding: 1.25rem;
+  font-weight: bold;
+  background: #FBF8F3;
+  display: block;
+  width: 100%;
+}
+
+.header .buttons-mobile .signup-btn {
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1.125rem;
+  padding: 1.25rem;
+  font-weight: bold;
+  background: #5017D2;
+  color: white;
+  display: block;
+  width: 100%;
+}
+
+.header .logo {
   text-decoration: none;
   color: black;
   font-size: 1.25rem;
@@ -61,6 +176,7 @@ img {
           flex-direction: column-reverse;
   padding: 2rem;
   margin-top: -5rem;
+  pointer-events: none;
 }
 
 .hero-section .hero-img {
@@ -292,5 +408,15 @@ img {
   font-size: 1.125rem;
   color: #434444;
   margin: .6rem 0;
+}
+
+@media (min-width: 900px) {
+  .header .desktop-menu .nav,
+  .header .desktop-menu .buttons {
+    display: block !important;
+  }
+  .header .desktop-menu .burger-menu {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -14,11 +14,15 @@ img {
   max-width: 100%;
 }
 
+.d_none {
+  display: none !important;
+}
+
 .background-container {
   background-color: #FBF8F3;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .container {
     width: 80%;
     max-width: 1200px;

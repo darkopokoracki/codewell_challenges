@@ -15,29 +15,54 @@
     <div class="background-container">
         <div class="container">
             <header class="header">
-                <a href="index.html">Fiber</a>
+                <div class="desktop-menu">
+                    <a href="index.html" class="logo">Fiber</a>
 
-                <nav class="nav">
-                    <ul>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Community</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Pricing</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Features</a>
-                        </li>
-                    </ul>
-                </nav>
+                    <nav class="nav">
+                        <ul>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Community</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Pricing</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Features</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
 
-                <div class="buttons">
-                    <button type="button" class="signin-btn">Sign In</button>
-                    <button type="button" class="signup-btn">Sign Up</button>
+                    <div class="buttons">
+                        <button type="button" class="signin-btn">Sign In</button>
+                        <button type="button" class="signup-btn">Sign Up</button>
+                    </div>
+
+                    <div class="burger-menu">
+                        <img src="../Assets/Hamburger Menu.svg" alt="Hamburger Menu">
+                    </div>
                 </div>
 
-                <div class="burger-menu">
-                    <img src="../Assets/Hamburger Menu.svg" alt="Hamburger Menu">
+                <div class="mobile-menu d_none">
+                    <nav class="nav-mobile">
+                        <span class="close">X</span>
+                        <ul>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Community</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Pricing</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Features</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="buttons-mobile">
+                        <button type="button" class="signin-btn">Sign In</button>
+                        <button type="button" class="signup-btn">Sign Up</button>
+                    </div>
                 </div>
             </header>
 
@@ -238,5 +263,7 @@
             </footer>
         </div>
     </div>
+
+    <script src="../js/app.js"></script>
 </body>
 </html>
