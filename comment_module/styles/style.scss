@@ -7,3 +7,102 @@
 html {
     font-family: 'Rubik', sans-serif;
 }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: lightpink;
+}
+
+.line {
+    height: 50px;
+    width: 1px;
+    background: red;
+}
+
+.user-img {
+    width: 45px;
+}
+
+.container {
+    background: white;
+    border-radius: 12px;
+    padding: 3rem;
+    padding-left: 7rem;
+    box-shadow: 4px 4px 8px 4px rgba(0,0,0,0.2); // Privremeno
+}
+
+.comment {
+    position: relative;
+    margin-bottom: 2rem;
+
+    .user-img {
+        position: absolute;
+    }
+
+    .name {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-right: .5rem;
+    }
+
+    .time {
+        font-size: 1rem;
+        color: #757575;
+    }
+
+    .text {
+        font-size: 1rem;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.comment1 {
+    .user-img {
+        margin-left: -4rem;
+    }
+}
+
+.comment2 {
+    padding-left: 4rem;
+
+    .user-img {
+        margin-left: -4rem;
+    }
+}
+
+.comment3 {
+    padding-left: 8rem;
+
+    .user-img {
+        margin-left: -4rem;
+    }
+}
+
+.comment4 {
+    .user-img {
+        margin-left: -4rem;
+    }
+}
+
+.status {
+    display: flex;
+    align-items: center;
+
+    .number {
+        margin: 0 .5rem;
+    }
+
+    .reply {
+        margin: 0 1.5rem;
+        font-weight: 500;
+    }
+
+    .report {
+        font-weight: 500;
+    }
+}
