@@ -1,1 +1,211 @@
-/* No CSS *//*# sourceMappingURL=signup.css.map */
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background: #F9EEF9;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0 3rem 0;
+}
+
+.header a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-size: 1.125rem;
+  color: black;
+  font-weight: bold;
+}
+
+.header a button {
+  margin-right: 1rem;
+  padding: .5rem .7rem;
+  border: 2px solid #C5C1C5;
+  border-radius: 5px;
+  cursor: pointer;
+  background: white;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section div, section form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+section > div {
+  margin-right: 1.5rem;
+  padding-right: 4rem;
+  padding-top: 6rem;
+}
+
+section form {
+  margin-left: 1.5rem;
+  padding: 4rem;
+}
+
+section div h2 {
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+
+section div .text-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+section div .text-div i {
+  margin-right: 1rem;
+}
+
+section form {
+  background: white;
+  border-radius: 12px;
+}
+
+section form h2 {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+section form label[for="email"],
+section form label[for="name"],
+section form label[for="pass"] {
+  display: block;
+  font-weight: bold;
+  margin-bottom: .3rem;
+}
+
+section form ::-webkit-input-placeholder {
+  color: #afafaf;
+  font-size: .9rem;
+}
+
+section form :-ms-input-placeholder {
+  color: #afafaf;
+  font-size: .9rem;
+}
+
+section form ::-ms-input-placeholder {
+  color: #afafaf;
+  font-size: .9rem;
+}
+
+section form ::placeholder {
+  color: #afafaf;
+  font-size: .9rem;
+}
+
+section form input#email,
+section form input#name,
+section form input#pass {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: .8rem;
+  border: 1px solid #C5C1C5;
+  border-radius: 5px;
+}
+
+section form .checkbox-wrapper input {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+section form .checkbox-wrapper label {
+  line-height: 1.6;
+}
+
+section form .checkbox-wrapper a {
+  font-weight: bold;
+  color: #664EFC;
+  font-size: 1.1rem;
+}
+
+section form button {
+  border: none;
+  background: #664EFC;
+  padding: 1rem;
+  font-size: 1.125rem;
+  color: white;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-radius: 7px;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .container {
+    width: 100%;
+    padding: 2rem;
+  }
+  .header {
+    padding: 1rem 0 3rem 0;
+  }
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section > div {
+    margin: 0;
+    padding: 0;
+  }
+  section form {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 1.5rem;
+  }
+  .header p {
+    display: none;
+  }
+  section form {
+    padding: 2rem;
+  }
+}
+/*# sourceMappingURL=signup.css.map */

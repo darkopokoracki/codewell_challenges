@@ -15,14 +15,18 @@
     <div class="container">
         <header class="header">
             <div class="logo-wrapper">
-                <img src="Assets/Logo.svg" alt="">
+                <a href="index.html">
+                    <img src="Assets/Logo.svg" alt="">
+                </a>
             </div>
 
             <div>
-                <button type="button">
-                    <img src="Assets/Back Arrow.svg" alt="Back Arrow">
-                </button>
-                <a href="#">Back to homepage</a>
+                <a href="index.html">
+                    <button type="button">
+                        <img src="Assets/Back Arrow.svg" alt="Back Arrow">
+                    </button>
+                    <p>Back to homepage</p>
+                </a>
             </div>
         </header>
 
@@ -30,9 +34,9 @@
             <div>
                 <h2>Create your personalized feed.</h2>
                 <div class="text-div">
-                    <i class="far fa-circle"></i>
+                    <i class="far fa-circle" style="color: red; font-size: 1.4rem;"></i>
                     <p>
-                        <span>Over 20 resources.</span>
+                        <span style="font-weight: bold;">Over 20 resources.</span>
                         With Resources ranging from
                         Reddit to IndieHackers, we've got all your needs
                         covered.
@@ -40,9 +44,9 @@
                 </div>
 
                 <div class="text-div">
-                    <i class="far fa-newspaper"></i>
+                    <i class="far fa-newspaper" style="color: gray; font-size: 1.4rem;"></i>
                     <p>
-                        <span>Delivered weekly.</span>
+                        <span style="font-weight: bold;">Delivered weekly.</span>
                         Every week at exactly Tuesday
                         12:00 P.M. EST - expect a value-packed digest
                         right in your email.
@@ -50,9 +54,9 @@
                 </div>
 
                 <div class="text-div">
-                    <i class="far fa-lightbulb"></i>
+                    <i class="far fa-lightbulb" style="color: orange; font-size: 1.4rem;"></i>
                     <p>
-                        <span>Unlimited ideas.</span>
+                        <span style="font-weight: bold;">Unlimited ideas.</span>
                         With all the ideas you'll be
                         reading about, what's stopping you from creating
                         a sustainable startup?
@@ -64,15 +68,15 @@
                 <h2 class="form-title">Create Your IndieBrew Account</h2>
 
                 <label for="email">Email</label>
-                <input type="email" id="email">
+                <input type="email" id="email" placeholder="john@example.com">
                 
                 <label for="name">Full Name</label>
-                <input type="email" id="name">
+                <input type="email" id="name" placeholder="John Doe">
 
                 <label for="pass">Password</label>
-                <input type="password" id="pass">
+                <input type="password" id="pass" placeholder="At least 8 characters">
 
-                <div>
+                <div class="checkbox-wrapper">
                     <input type="checkbox" id="check">
                     <label for="check">
                         By creating an account on IndieBrew, you agree

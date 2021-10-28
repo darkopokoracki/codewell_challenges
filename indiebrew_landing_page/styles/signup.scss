@@ -1,0 +1,164 @@
+@import '_reset.scss';
+@import '_components.scss';
+
+// Desktop first
+body {
+    background: #F9EEF9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0 3rem 0;
+
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 1.125rem;
+        color: black;
+        font-weight: bold;
+
+        button {
+            @include backBtn;
+        }
+    }
+}
+
+section {
+    display: flex;
+
+    div, form {
+        flex: 1;
+    }
+
+     > div {
+        margin-right: 1.5rem;
+        padding-right: 4rem;
+        padding-top: 6rem;
+    }
+
+    form {
+        margin-left: 1.5rem;
+        padding: 4rem;
+    }
+}
+
+section {
+    div {
+        h2 {
+            font-size: 2.3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .text-div {
+            display: flex;
+            margin-bottom: 2rem;
+
+            i {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+section {
+    form {
+        background: white;
+        border-radius: 12px;
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+        }
+
+        label[for="email"],
+        label[for="name"],
+        label[for="pass"] {
+            display: block;
+            font-weight: bold;
+            margin-bottom: .3rem;
+        }
+
+        ::placeholder {
+            color: rgb(175, 175, 175);
+            font-size: .9rem;
+        }
+
+        input#email,
+        input#name,
+        input#pass {
+            width: 100%;
+            margin-bottom: 2rem;
+            padding: .8rem;
+            border: 1px solid #C5C1C5;
+            border-radius: 5px;
+        }
+
+        .checkbox-wrapper {
+
+            input {
+                width: 1.1rem;
+                height: 1.1rem;
+            }
+
+            label {
+                line-height: 1.6;
+            }
+
+            a {
+                font-weight: bold;
+                color: #664EFC;
+                font-size: 1.1rem;
+            }
+        }
+
+        button {
+            @include createAccBtn;
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .header {
+        padding: 1rem 0 3rem 0;
+    }
+
+    section {
+        flex-direction: column;
+
+        > div {
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .header {
+        p {
+            display: none;
+        }
+    }
+
+    section {
+        form {
+            padding: 2rem;
+        }
+    }
+}
