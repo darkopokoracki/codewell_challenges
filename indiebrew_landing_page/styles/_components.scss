@@ -18,3 +18,20 @@
     letter-spacing: 0.5px;
     border-radius: 7px;
 }
+
+@mixin ctaBtn {
+    border: none;
+    background: #664EFC;
+    padding: 1rem;
+    font-size: 1.125rem;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-radius: 7px;
+
+    span {
+        color: #FFF9FD;
+        font-weight: 400;
+    }
+}

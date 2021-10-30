@@ -1,0 +1,66 @@
+@import '_reset.scss';
+@import '_components.scss';
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.header {
+    nav {
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li {
+                list-style: none;
+                margin-right: 1rem;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 1.125rem;
+                }
+            }
+        }
+        .cta-btn {
+            @include ctaBtn;
+        }
+
+        .checkbtn {
+            cursor: pointer;
+            display: none;
+        }
+        
+        #check {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+    .header {
+        .nav {
+            .checkbtn {
+                display: block;
+            }
+
+
+            ul, button {
+                display: none;
+            }
+
+            #check:checked ~ ul,
+            #check:checked ~ button {
+                display: block;
+            }
+
+        }
+    }
+}

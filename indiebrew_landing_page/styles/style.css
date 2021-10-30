@@ -1,1 +1,103 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: 'DM Sans', sans-serif;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 0;
+}
+
+.header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header nav ul li {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.125rem;
+}
+
+.header nav .cta-btn {
+  border: none;
+  background: #664EFC;
+  padding: 1rem;
+  font-size: 1.125rem;
+  color: white;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border-radius: 7px;
+}
+
+.header nav .cta-btn span {
+  color: #FFF9FD;
+  font-weight: 400;
+}
+
+.header nav .checkbtn {
+  cursor: pointer;
+  display: none;
+}
+
+.header nav #check {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .header .nav .checkbtn {
+    display: block;
+  }
+  .header .nav ul, .header .nav button {
+    display: none;
+  }
+  .header .nav #check:checked ~ ul,
+  .header .nav #check:checked ~ button {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */
