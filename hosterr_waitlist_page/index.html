@@ -16,14 +16,14 @@
 <body>
     <div class="container">
         <header class="header">
-            <nav class="list">
+            <nav class="nav">
                 <div class="logo-wrapper">
                     <img src="Assets/Logo.svg" alt="logo">
-                </div>
 
-                <span>
-                    Hosterr is hiring!
-                </span>
+                    <span>
+                        Hosterr is hiring!
+                    </span>
+                </div>
 
                 <ul>
                     <li><a href="#">Plans</a></li>
@@ -31,13 +31,13 @@
                     <li><a href="#">Why Hosterr</a></li>
                 </ul>
 
-                <button class="signin-btn">
-                    Sign In
-                </button>
-
-                <button class="cta-btn">
-                    Join Waitlist
-                </button>
+                <div class="nav-buttons">
+                    <a href="#">Sign In</a>
+    
+                    <button class="cta-btn">
+                        Join Waitlist
+                    </button>
+                </div>
             </nav>
         </header>
 
@@ -48,7 +48,7 @@
                     less than 5 minutes
                 </h1>
 
-                <p>
+                <p class="hero-text">
                     With Hosterr, get your webiste up and running in no less than 5
                     minutes with the most competetive pricing packages available
                     online.
@@ -68,10 +68,27 @@
             </div>
 
             <div class="img-wrapper">
-                <img src="Assets/Blue Shape.svg" alt=" Blue Shape">
-                <img src="Assets/Pink Shape.svg" alt=" Pink Shape">
-                <img src="Assets/Purple Shape.svg" alt=" purple Shape">
-                <img src="Assets/Hero Image (Model).png" alt="Hero Img model">
+                <div class="center-div">
+                    <img src="Assets/Blue Shape.svg"
+                    alt=" Blue Shape"
+                    class="shape"
+                    id="blue-shape">
+                    
+                    <img src="Assets/Pink Shape.svg" 
+                    alt=" Pink Shape"
+                    class="shape"
+                    id="pink-shape">
+
+                    <img src="Assets/Purple Shape.svg" 
+                    alt=" purple Shape"
+                    class="shape"
+                    id="purple-shape">
+
+                    <img src="Assets/Hero Image (Model).png" 
+                    alt="Hero Img model"
+                    class="shape"
+                    id="hero-shape">
+                </div>
             </div>
         </section>
 

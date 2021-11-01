@@ -5,7 +5,7 @@
 }
 
 html {
-    /*font-family: 'Lato', sans-serif; */
+    font-family: 'Lato', sans-serif;
     /* font-family: 'Playfair Display', serif; */
 }
 
@@ -18,4 +18,8 @@ html {
 img {
     display: block;
     max-width: 100%;
+}
+
+.shape {
+    width: 350px;
 }
