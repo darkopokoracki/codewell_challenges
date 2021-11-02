@@ -14,6 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav {
@@ -26,10 +27,15 @@ body {
         span {
             background-image: 
                 linear-gradient(to right, #eaaf52, #f29851, #f58158, #f36b64, #ea5673);
-                padding: .5rem .8rem;
+                padding: .3rem .6rem;
+                font-size: .9rem;
                 color: white;
                 border-radius: 100px;
         }
+    }
+
+    i {
+        display: none;
     }
 
     ul {
@@ -116,10 +122,10 @@ section {
         flex: 1;
         display: flex;
         justify-content: flex-end;
-
+        position: relative;
+        
         .center-div {
-            width: 70%;
-            position: relative;
+            width: 62%;
         }
     }
 }
@@ -177,13 +183,108 @@ section {
 
 #blue-shape {
     transform: rotate(-45deg);
+    position: static;
 }
 
 #pink-shape {
     transform: rotate(-30deg);
+    top: 0;
 }
 
 #purple-shape {
     transform: rotate(-15deg);
+    top: 0;
 }
 
+#hero-shape {
+    top: 0;
+}
+
+
+@media (max-width: 1000px) {
+    .header {
+        margin-bottom: 2rem;
+    }
+
+    .nav {
+        ul {
+            display: none;
+            width: 100%;
+        }
+
+        ul.show {
+            display: block;
+            text-align: center;
+
+            li {
+                margin: 1.5rem 0;
+                a {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .nav-buttons {
+            display: none;
+            width: 100%;
+        }
+
+        .nav-buttons.show {
+            display: flex;
+            justify-content: center;
+        }
+
+        i {
+            display: block;
+        }
+    }
+
+    section {
+        flex-direction: column-reverse;
+
+        .img-wrapper {
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    section {
+        .text-wrapper {
+            margin-top: 2rem;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            form {
+                input {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+
+                .cta-btn {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 3rem;
+
+        .footer-nav {
+            flex-direction: column;
+            align-items: flex-start;
+    
+            ul {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

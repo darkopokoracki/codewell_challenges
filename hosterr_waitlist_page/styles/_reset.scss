@@ -21,5 +21,11 @@ img {
 }
 
 .shape {
-    width: 350px;
+    max-width: 350px;
+}
+
+@media (max-width: 600px) {
+    .shape {
+        max-width: 200px;
+    }
 }
